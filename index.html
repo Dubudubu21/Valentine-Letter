@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Day Flip Book</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Autoplay Audio (No Button) -->
+  <audio id="bg-music" autoplay loop>
+    <source src="cup.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div id="hedlinecontainer">
+    <div id="shine">Happy Valentine's Day Baby Bubu!💞</div>
+  </div>
+
+  <div class="gallery">
+    <img src="aaa.jpg" alt="a lovely kiss in the night">
+    <img src="bbb.jpg">
+    <img src="ccc.jpg" alt="a baby">
+    <img src="ddd.jpg" alt="a girl in the forest">
+    <img src="eee.jpg" alt="a girl">
+    <img src="fff.jpg" alt="a girl">
+    <img src="ggg.jpg" alt="a girl">
+    <img src="hhh.jpg" alt="a girl">
+    <img src="iii.jpg" alt="a girl">
+    <img src="jjj.jpg" alt="a girl">
+    <img src="kkk.jpg" alt="a girl">
+  </div>
+
+  <script>
+    // Ensure autoplay works after user interacts with the page
+    document.addEventListener("click", function() {
+      const audio = document.getElementById("bg-music");
+      audio.muted = false;
+      audio.play();
+    });
+  </script>
+
+</body>
+</html>
